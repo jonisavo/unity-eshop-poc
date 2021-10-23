@@ -50,7 +50,7 @@ namespace EshopPOC
             var postOrderReq = EshopAPI.Post("/orders", new Dictionary<string, object>
             {
                 { "orderItems", GetItemsFromDictionary(_productsInOrder) },
-                { "shippingAddress1", "Karaportti 1" },
+                { "shippingAddress1", "Karaportti 1" }, // Metropolia Karamalmi Campus :)
                 { "city", "Espoo" },
                 { "zip", "02610" },
                 { "country", "Finland" },
