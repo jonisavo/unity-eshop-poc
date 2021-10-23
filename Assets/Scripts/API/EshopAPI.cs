@@ -39,8 +39,6 @@ namespace EshopPOC.API
         {
             var text = req.downloadHandler.text;
             
-            Debug.Log(text);
-            
             return (Response<T>) JsonUtility.FromJson(text, typeof(Response<T>));
         }
     }
